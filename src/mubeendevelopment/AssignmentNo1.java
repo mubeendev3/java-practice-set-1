@@ -92,5 +92,47 @@ public class AssignmentNo1 {
         System.out.println(num1 + " == " + num2 + " = " + (num1==num2));
         System.out.println(num1 + " != " + num2 + " = " + (num1!=num2));
     }
+    
+    public void questionNo9() {
+        System.out.print("Enter a year: ");
+        int year = sc.nextInt();
+
+        // Check if leap year and even number using logical operators
+        boolean isLeapYear = (year % 4 == 0) && ((year % 100 != 0) || (year % 400 == 0));
+        boolean isEven = year % 2 == 0;
+
+        if (isLeapYear && isEven) {
+            System.out.println(year + " is a leap year and an even number.");
+        } else if (isLeapYear) {
+            System.out.println(year + " is a leap year, but not an even number.");
+        } else if (isEven) {
+            System.out.println(year + " is an even number, but not a leap year.");
+        } else {
+            System.out.println(year + " is neither a leap year nor an even number.");
+        }
+    }
+    
+    public void questionNo10() {
+        System.out.print("Enter the first integer: ");
+        int num1 = sc.nextInt();
+
+        System.out.print("Enter the second integer: ");
+        int num2 = sc.nextInt();
+
+        
+        int bitwiseAnd = num1 & num2;
+        int bitwiseOr = num1 | num2;
+        int bitwiseXor = num1 ^ num2;
+        int bitwiseNot1 = ~num1;
+        
+
+        
+        System.out.println("Bitwise AND: " + num1 + " & " + num2 + " = " + bitwiseAnd);
+        System.out.println("Bitwise OR: " + num1 + " | " + num2 + " = " + bitwiseOr);
+        System.out.println("Bitwise XOR: " + num1 + " ^ " + num2 + " = " + bitwiseXor);
+        System.out.println("Bitwise NOT of " + num1 + ": ~" + num1 + " = " + bitwiseNot1);
+        
+    }
+    
      
 }
