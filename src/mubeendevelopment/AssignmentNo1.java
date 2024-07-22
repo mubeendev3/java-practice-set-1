@@ -5,6 +5,7 @@ import javax.swing.JOptionPane;
 
 
 public class AssignmentNo1 {
+    Scanner sc = new Scanner(System.in);
     public void questionNo1() {
         String userInput = JOptionPane.showInputDialog("Enter your temprature in Fahrenheit");
         int tempratureInFahrenheit = Integer.parseInt(userInput);
@@ -21,7 +22,7 @@ public class AssignmentNo1 {
         
     }
     
-    public  void questionNo3() {
+    public void questionNo3() {
         String userInput = JOptionPane.showInputDialog("Enter your value in double");
         double valueInDouble = Double.parseDouble(userInput);
         
@@ -40,10 +41,56 @@ public class AssignmentNo1 {
     
     public void questionNo5() {
         byte initialValue = 126;
-        System.out.print("The initial value for byte is 127\nIf you change the value higher than 127 you will get an error\nEnter the new higher value for byte: ");
-        Scanner sc = new Scanner(System.in);
+        System.out.print("The initial value for byte is 127\nIf you change the value higher than 127 you will get an error\nEnter the new higher value for byte: ");        
         byte newByteValue = sc.nextByte();
         initialValue = newByteValue;
         System.out.println("The Updated Value for byte is: " + initialValue);
     }
+     
+    public void questionNo6() {
+         System.out.print("Enter the value for num1: ");
+         double num1 = sc.nextDouble();
+         System.out.print("Enter the value for num2: ");
+         double num2 = sc.nextDouble();
+         
+         double addition = num1 + num2;
+         double subtraction = num1 - num2;
+         double multiplication = num1 * num2;
+         double division = num1 / num2;
+         double modulos = num1 % num2;
+         
+         System.out.println("Addition: " + addition);
+         System.out.println("Subtraction: " + subtraction);
+         System.out.println("Multiplication: " + multiplication);
+         System.out.println("Division: " + division);
+         System.out.println("Modulous: " + modulos);
+     }
+    
+    public void questionNo7() {
+        System.out.print("Enter the value for num1: ");
+        double num1 = sc.nextDouble();
+        System.out.print("Enter the value for num2: ");
+        double num2 = sc.nextDouble();
+        
+        System.out.println(num1 + " += " + num2 + " = " + (num1+=num2));
+        System.out.println(num1 + " -= " + num2 + " = " + (num1-=num2));
+        System.out.println(num1 + " *= " + num2 + " = " + (num1*=num2));
+        System.out.println(num1 + " /= " + num2 + " = " + (num1/=num2));
+        System.out.println(num1 + " %= " + num2 + " = " + (num1%=num2));
+    }
+    
+    public void questionNo8() {
+        System.out.print("Enter the value for num1: ");
+        int num1 = sc.nextInt();
+        System.out.print("Enter the value for num2: ");
+        int num2 = sc.nextInt();
+        
+        System.out.println(num1 + " < " + num2 + " = " + (num1<num2));
+        System.out.println(num1 + " > " + num2 + " = " + (num1>num2));
+        System.out.println(num1 + " <= " + num2 + " = " + (num1<=num2));
+        System.out.println(num1 + " >= " + num2 + " = " + (num1>=num2));
+        System.out.println(num1 + " == " + num2 + " = " + (num1==num2));
+        System.out.println(num1 + " != " + num2 + " = " + (num1!=num2));
+    }
+     
 }
