@@ -22,7 +22,9 @@ public class MubeenDevelopment {
 //          assignmentNo1.questionNo15();
 //          assignmentNo1.questionNo16();
 //          assignmentNo1.questionNo17();
-        assignmentNo1.questionNo18();
+//          assignmentNo1.questionNo18();
+//          assignmentNo1.questionNo19();
+//          assignmentNo1.questionNo20();
 
     }
 

@@ -285,6 +285,33 @@ public class AssignmentNo1 {
     }
     
     public void questionNo19() {
-        
+        System.out.print("Enter any number: ");
+        int num = sc.nextInt(); 
+        int firstTerm = 0, secondTerm = 1;
+
+        System.out.print("First " + num + " terms: ");
+
+        for (int i = 1; i <= num; i++) {
+            System.out.print(firstTerm + " ");
+            
+            int nextTerm = firstTerm + secondTerm;
+            firstTerm = secondTerm;
+            secondTerm = nextTerm;
+        }
     }
+    
+    public void questionNo20() {
+        for (int num = 2; num <= 100; num++) {
+            boolean isPrime = true;
+            for (int i = 2; i < num; i++) {
+                if (num % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime) {
+                System.out.print(num + " ");
+            }
+        }
+    } 
 }
